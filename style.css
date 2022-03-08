@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  height: 30px;
+  padding-top: 10px;
+}
+.products {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+}
+.product-item {
+  margin: 15px 15px 0 0;
+  max-width: 200px;
+  width: 100%;
+  height: 250px;
+  background-color: greenyellow;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-item:last-child {
+  margin-right: 0;
+}
+.product-photo {
+  width: 60%;
+  height: 45%;
+}

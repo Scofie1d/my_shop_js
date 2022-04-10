@@ -1,1 +1,0 @@
-# my_shop_js

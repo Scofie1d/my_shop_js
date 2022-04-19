@@ -180,7 +180,7 @@ class BasketItem extends Item {
         </div>
         <div class="sum_block">
             <p class="product_price">$${this.quantity*this.price}</p>
-            <button class="del_btn" data-id="${this.id_product}">&times;</button>
+            <button class="del_btn" data-id="${this.id_product }">&times;</button>
         </div>
         </div>`
     }

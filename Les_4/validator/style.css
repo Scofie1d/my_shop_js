@@ -1,0 +1,21 @@
+.feedback_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub_btn {
+    width: 100px;
+    margin-left: 25px;
+}
+
+.invalid {
+    border: 1px solid red;
+}
+
+.valid {
+    border: 1px solid greenyellow;
+}
+
+.error_msg {
+    color: red;
+}

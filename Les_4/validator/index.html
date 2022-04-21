@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Форма обратной связи</title>
+</head>
+
+<body>
+    <form action="#" class="feedback_form" id="feedback">
+        <label for="name" class="label_name">
+             Ваше имя<br>
+              <input type="text" name="name" id="name" placeholder="Иван">
+            </label><br>
+        <label for="phone" class="label_name">
+            Номер телефона<br>
+              <input type="tel" name="phone" id="phone" placeholder="+7(777)777-77-77">
+            </label><br>
+        <label for="email" class="label_name">
+            Ваша электронная почта <br> 
+              <input type="email" name="email" id="email" placeholder="mymail@mail.ru">
+            </label><br>
+        <button class="sub_btn">Отправить</button>
+    </form>
+    <script src="valid.js"></script>
+    <script>
+        window.onload = () => {
+            document.getElementById('feedback').addEventListener('submit', el => {
+                let val = new Validator('feedback');
+                if (!val.valid) {
+                    el.preventDefault();
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

@@ -9,13 +9,13 @@
 }
 
 .invalid {
-    border: 1px solid red;
+    border: 2px solid red;
 }
 
 .valid {
-    border: 1px solid greenyellow;
+    border: 2px solid greenyellow;
 }
 
-.error_msg {
+p {
     color: red;
 }

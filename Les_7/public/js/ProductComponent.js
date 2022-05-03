@@ -35,7 +35,7 @@ Vue.component('products', {
 Vue.component('product', {
     props: ['product', 'img'],
     template: `
-    <li><a href="#" class="products-link">
+    <li><div href="#" class="products-link">
                         <article class="products-card">
                             <img :src="img" alt="product_photo" class="products-card-photo">
                             <div class="products-card-info">
@@ -51,7 +51,7 @@ Vue.component('product', {
                                 <span>Add to Cart</span>
                             </button>
                         </article>
-                    </a>
+                    </div>
                     </li>
     `
 })
